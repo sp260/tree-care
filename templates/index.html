@@ -2,9 +2,7 @@
 <html>
 <head>
   <title>tree-care</title>
-  <link rel = "icon" type = "image/png" href = "logo.png">
-  <!-- For apple devices -->
-  <link rel = "apple-touch-icon" type = "image/png" href = "logo.png"/>
+  <link rel = "icon" type = "image/png" href = "{{ url_for('static', filename='logo.png') }}">
   <script src="{{ url_for('static', filename='script.js') }}"></script>
   <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
@@ -21,7 +19,7 @@
     </form>
   </div>
   <div class="dashboard">
-    <iframe class="report" width="1200" height="700" src="https://datastudio.google.com/embed/reporting/1lHPe3k8aQSP4lUfZla0a-9tXzvzVc_Nu/page/YDlq" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe class="report" width="1400" height="650" src="https://datastudio.google.com/embed/reporting/1lHPe3k8aQSP4lUfZla0a-9tXzvzVc_Nu/page/YDlq" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 </body>
 </html>

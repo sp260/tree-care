@@ -6,8 +6,8 @@ from google.cloud import datastore
 datastore_client = datastore.Client()
 
 def put_volunteers(volunteers):
-    entity = datastore.Entity(key=datastore_client.key('volunteer'))
     for volunteer in volunteers:
+        entity = datastore.Entity(key=datastore_client.key('volunteer'))
         try:
             entity.update({
                 'last_name': volunteer[1][0],
