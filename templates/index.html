@@ -7,17 +7,31 @@
   <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <div class="subscribe-box">
-    <h2>Demande de volontariat</h1>
-    <form class="subscribe" action="/" method="POST">
-        <input class="halfwidth", type="text", placeholder="Nom", name="last_name", autocomplete="off" required>
-        <input class="halfwidth", type="text", placeholder="Prenom", name="first_name", autocomplete="off" required>
-        <input class="allwidth", type="text", placeholder="Adresse", name="adress", autocomplete="off" required>
-        <input class="allwidth", type="text", placeholder="Email", name="email", autocomplete="off" required>
-        <input class="allwidth", type="text", placeholder="Id Arbre", name="id_tree",autocomplete="off" required>
-        <button class="container" id="button" type="submit">Envoyer</button>
-    </form>
-  </div>
+  <div class="top_c">
+    <div class="top">
+      <div class="parag">
+        <h2>
+          Joignez-vous à notre équipe de bénévoles. Créez une différence durable.
+          <br /><br />
+          <font color="#1560BD">
+            Inscrivez-vous pour assurer l'entretien d'un ou plusieurs <font color="white">arbres</font> proches de votre domicile.
+          </font>
+        </h2>
+        <p>Contactez-nous pour plus d'informations.</p>
+      </div>
+      <div class="subscribe-box">
+        <h2>Demande de volontariat</h2>
+        <form class="subscribe" action="/" method="POST">
+            <input class="halfwidth", type="text", placeholder="Nom", name="last_name", autocomplete="off" required>
+            <input class="halfwidth", type="text", placeholder="Prenom", name="first_name", autocomplete="off" required>
+            <input class="allwidth", type="text", placeholder="Adresse", name="adress", autocomplete="off" required>
+            <input class="allwidth", type="text", placeholder="Email", name="email", autocomplete="off" required>
+            <input class="allwidth", type="text", placeholder="Id Arbre", name="id_tree",autocomplete="off" required>
+            <button class="container" id="button" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>  
   <div class="dashboard">
     <iframe class="report" width="1400" height="650" src="https://datastudio.google.com/embed/reporting/1lHPe3k8aQSP4lUfZla0a-9tXzvzVc_Nu/page/YDlq" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>

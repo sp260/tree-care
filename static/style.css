@@ -9,15 +9,34 @@ body {
     background: linear-gradient(to right, #25c481, #199662);
 }
 
-.subscribe-box {
+.top_c {
     padding: 3em 0;
     text-align: center;
     color: white;
 }
 
+.top {
+    max-width: 1400px;
+    margin: auto;
+    display: table;
+}
+
+.parag {
+    width: 60%;
+    display: table-cell;
+    padding: 0 2em;
+    text-align: left;
+    font-size: 20px;
+}
+
+.subscribe-box {
+    width: 40%;
+    display: table-cell;
+    padding: 0 2em;
+}
+
 .subscribe {
     width: 100%;
-    max-width: 600px;
     margin: auto;
 }
 
@@ -34,11 +53,11 @@ input {
 }
 
 .allwidth {
-    width: 600px;
+    width: 100%;
 }
 
 .halfwidth {
-    width: 297px;
+    width: 49%;
 }
 
 input::placeholder { 

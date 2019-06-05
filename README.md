@@ -12,7 +12,7 @@ pip install -t lib -r requirements.txt
 
 ## Running locally
 
-Local Environment:
+Use this command to run in local environment:
 
 ```python
 python main.py
