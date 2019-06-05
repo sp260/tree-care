@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <title>tree-care</title>
+  <link rel = "icon" type = "image/png" href = "logo.png">
+  <!-- For apple devices -->
+  <link rel = "apple-touch-icon" type = "image/png" href = "logo.png"/>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="subscribe-box">
+    <h2>Demande de volontariat</h1>
+    <form class="subscribe" action="/" method="POST">
+        <input class="halfwidth", type="text", placeholder="Nom", name="last_name", autocomplete="off" required>
+        <input class="halfwidth", type="text", placeholder="Prenom", name="first_name", autocomplete="off" required>
+        <input class="allwidth", type="text", placeholder="Adresse", name="adress", autocomplete="off" required>
+        <input class="allwidth", type="text", placeholder="Email", name="email", autocomplete="off" required>
+        <input class="allwidth", type="text", placeholder="Id Arbre", name="id_tree",autocomplete="off" required>
+        <button class="container" id="button" type="submit">Envoyer</button>
+    </form>
+  </div>
+  <div class="dashboard">
+    <iframe class="report" width="1200" height="700" src="https://datastudio.google.com/embed/reporting/1lHPe3k8aQSP4lUfZla0a-9tXzvzVc_Nu/page/YDlq" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+</body>
+</html>

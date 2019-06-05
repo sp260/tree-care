@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <title>Datastore and Firebase Auth Example</title>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <div class="validation_content">
+    <div id="validation_img"></div>
+    
+    <h2>Votre demande a bien été prise en compte.</h2>
+    <!--{{data.last_name}}
+    {{data.first_name}}
+    {{data.adress}}
+    {{data.id_tree}}
+    <br />-->
+    Un e-mail de confirmation vous a été envoyé à l'adresse {{data.email}}.
+    Nous reviendrons vers vous très prochainement pour validation.
+  </div>
+
+</body>
+</html>
